@@ -163,8 +163,17 @@ print("-----------")
 let appearLastIndex = AppearLastIndex()
 print(appearLastIndex.solution2("swiftcoding"))
 
-
 print("-----------")
 
 let conditionalSimulation = ConditionalSimulation()
 print(conditionalSimulation.solution2([4, 2, 3, 6]))
+
+print("-----------")
+
+let compressionCharacter = CompressionCharacter()
+print(compressionCharacter.solution("aaabbcccdaa"))
+
+print("-----------")
+
+let sumOfElements = SumOfElements()
+print(sumOfElements.solution2([1, 2, 3, 4]))
