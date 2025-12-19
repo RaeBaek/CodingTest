@@ -3,11 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14543A402C9EA0A4000EF5A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14543A3F2C9EA0A4000EF5A1 /* main.swift */; };
+		14196C392DB86E49005BFBF9 /* MakeEqualSumTwoQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14196C382DB86E49005BFBF9 /* MakeEqualSumTwoQueue.swift */; };
+		143579E72DA5F511003475C7 /* ConnectingAnIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143579E62DA5F511003475C7 /* ConnectingAnIsland.swift */; };
+		1469B0E62DBEFD330081F9B4 /* ReportResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469B0E52DBEFD330081F9B4 /* ReportResults.swift */; };
+		14AB45A12D912FBF00AEF07C /* DoublePriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB45982D912FBF00AEF07C /* DoublePriorityQueue.swift */; };
+		14AB45A22D912FBF00AEF07C /* JumpAndTeleport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB45992D912FBF00AEF07C /* JumpAndTeleport.swift */; };
+		14AB45A32D912FBF00AEF07C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459A2D912FBF00AEF07C /* main.swift */; };
+		14AB45A42D912FBF00AEF07C /* multipleOfN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459B2D912FBF00AEF07C /* multipleOfN.swift */; };
+		14AB45A52D912FBF00AEF07C /* MutipleStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459C2D912FBF00AEF07C /* MutipleStrings.swift */; };
+		14AB45A62D912FBF00AEF07C /* TargetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459D2D912FBF00AEF07C /* TargetNumber.swift */; };
+		14AB45A72D912FBF00AEF07C /* TravelRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459E2D912FBF00AEF07C /* TravelRoute.swift */; };
+		14AB45A82D912FBF00AEF07C /* WordConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB459F2D912FBF00AEF07C /* WordConversion.swift */; };
+		14AB45CA2D937C6400AEF07C /* FarthestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB45C92D937C6400AEF07C /* FarthestNode.swift */; };
+		14AB45DD2D9A140200AEF07C /* Carpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB45DC2D9A140200AEF07C /* Carpet.swift */; };
+		14CAE1E02DA34E0C00A199A0 /* BestAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAE1DF2DA34E0C00A199A0 /* BestAlbum.swift */; };
+		14CEF80D2DAC887B00B272F9 /* MakingABigNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEF80C2DAC887B00B272F9 /* MakingABigNumber.swift */; };
+		14D411DF2DAF2CAE00792F23 /* JoyStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D411DE2DAF2CAE00792F23 /* JoyStick.swift */; };
+		14E50CC12DB5C60F004D3B5A /* EmojiDiscountEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50CC02DB5C60F004D3B5A /* EmojiDiscountEvent.swift */; };
+		14ECE74E2D9CB782003F701D /* FatigueLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECE74D2D9CB782003F701D /* FatigueLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +40,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14196C382DB86E49005BFBF9 /* MakeEqualSumTwoQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeEqualSumTwoQueue.swift; sourceTree = "<group>"; };
+		143579E62DA5F511003475C7 /* ConnectingAnIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingAnIsland.swift; sourceTree = "<group>"; };
 		14543A3C2C9EA0A4000EF5A1 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14543A3F2C9EA0A4000EF5A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1469B0E52DBEFD330081F9B4 /* ReportResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportResults.swift; sourceTree = "<group>"; };
+		14AB45982D912FBF00AEF07C /* DoublePriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublePriorityQueue.swift; sourceTree = "<group>"; };
+		14AB45992D912FBF00AEF07C /* JumpAndTeleport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAndTeleport.swift; sourceTree = "<group>"; };
+		14AB459A2D912FBF00AEF07C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		14AB459B2D912FBF00AEF07C /* multipleOfN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multipleOfN.swift; sourceTree = "<group>"; };
+		14AB459C2D912FBF00AEF07C /* MutipleStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutipleStrings.swift; sourceTree = "<group>"; };
+		14AB459D2D912FBF00AEF07C /* TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetNumber.swift; sourceTree = "<group>"; };
+		14AB459E2D912FBF00AEF07C /* TravelRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelRoute.swift; sourceTree = "<group>"; };
+		14AB459F2D912FBF00AEF07C /* WordConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordConversion.swift; sourceTree = "<group>"; };
+		14AB45C92D937C6400AEF07C /* FarthestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarthestNode.swift; sourceTree = "<group>"; };
+		14AB45DC2D9A140200AEF07C /* Carpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpet.swift; sourceTree = "<group>"; };
+		14CAE1DF2DA34E0C00A199A0 /* BestAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAlbum.swift; sourceTree = "<group>"; };
+		14CEF80C2DAC887B00B272F9 /* MakingABigNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingABigNumber.swift; sourceTree = "<group>"; };
+		14D411DE2DAF2CAE00792F23 /* JoyStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyStick.swift; sourceTree = "<group>"; };
+		14E50CC02DB5C60F004D3B5A /* EmojiDiscountEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDiscountEvent.swift; sourceTree = "<group>"; };
+		14ECE74D2D9CB782003F701D /* FatigueLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatigueLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		143BA4122EF4F01300B9B464 /* Care */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Care; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		14543A392C9EA0A4000EF5A1 /* Frameworks */ = {
@@ -41,7 +79,7 @@
 		14543A332C9EA0A4000EF5A1 = {
 			isa = PBXGroup;
 			children = (
-				14543A3E2C9EA0A4000EF5A1 /* CodingTest */,
+				14AB45A02D912FBF00AEF07C /* CodingTest */,
 				14543A3D2C9EA0A4000EF5A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,10 +92,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14543A3E2C9EA0A4000EF5A1 /* CodingTest */ = {
+		14AB45A02D912FBF00AEF07C /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				14543A3F2C9EA0A4000EF5A1 /* main.swift */,
+				143BA4122EF4F01300B9B464 /* Care */,
+				14AB45982D912FBF00AEF07C /* DoublePriorityQueue.swift */,
+				14AB45DC2D9A140200AEF07C /* Carpet.swift */,
+				14ECE74D2D9CB782003F701D /* FatigueLevel.swift */,
+				14CAE1DF2DA34E0C00A199A0 /* BestAlbum.swift */,
+				143579E62DA5F511003475C7 /* ConnectingAnIsland.swift */,
+				14CEF80C2DAC887B00B272F9 /* MakingABigNumber.swift */,
+				14D411DE2DAF2CAE00792F23 /* JoyStick.swift */,
+				14AB45992D912FBF00AEF07C /* JumpAndTeleport.swift */,
+				14AB459A2D912FBF00AEF07C /* main.swift */,
+				14E50CC02DB5C60F004D3B5A /* EmojiDiscountEvent.swift */,
+				14196C382DB86E49005BFBF9 /* MakeEqualSumTwoQueue.swift */,
+				1469B0E52DBEFD330081F9B4 /* ReportResults.swift */,
+				14AB459B2D912FBF00AEF07C /* multipleOfN.swift */,
+				14AB459C2D912FBF00AEF07C /* MutipleStrings.swift */,
+				14AB459D2D912FBF00AEF07C /* TargetNumber.swift */,
+				14AB459E2D912FBF00AEF07C /* TravelRoute.swift */,
+				14AB459F2D912FBF00AEF07C /* WordConversion.swift */,
+				14AB45C92D937C6400AEF07C /* FarthestNode.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -76,6 +132,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				143BA4122EF4F01300B9B464 /* Care */,
 			);
 			name = CodingTest;
 			productName = CodingTest;
@@ -120,7 +179,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14543A402C9EA0A4000EF5A1 /* main.swift in Sources */,
+				14AB45A12D912FBF00AEF07C /* DoublePriorityQueue.swift in Sources */,
+				14AB45A22D912FBF00AEF07C /* JumpAndTeleport.swift in Sources */,
+				14E50CC12DB5C60F004D3B5A /* EmojiDiscountEvent.swift in Sources */,
+				14AB45A32D912FBF00AEF07C /* main.swift in Sources */,
+				1469B0E62DBEFD330081F9B4 /* ReportResults.swift in Sources */,
+				14AB45A42D912FBF00AEF07C /* multipleOfN.swift in Sources */,
+				14196C392DB86E49005BFBF9 /* MakeEqualSumTwoQueue.swift in Sources */,
+				143579E72DA5F511003475C7 /* ConnectingAnIsland.swift in Sources */,
+				14D411DF2DAF2CAE00792F23 /* JoyStick.swift in Sources */,
+				14AB45A52D912FBF00AEF07C /* MutipleStrings.swift in Sources */,
+				14CEF80D2DAC887B00B272F9 /* MakingABigNumber.swift in Sources */,
+				14CAE1E02DA34E0C00A199A0 /* BestAlbum.swift in Sources */,
+				14AB45CA2D937C6400AEF07C /* FarthestNode.swift in Sources */,
+				14AB45A62D912FBF00AEF07C /* TargetNumber.swift in Sources */,
+				14ECE74E2D9CB782003F701D /* FatigueLevel.swift in Sources */,
+				14AB45A72D912FBF00AEF07C /* TravelRoute.swift in Sources */,
+				14AB45DD2D9A140200AEF07C /* Carpet.swift in Sources */,
+				14AB45A82D912FBF00AEF07C /* WordConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
