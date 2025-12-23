@@ -198,3 +198,15 @@ print(mockTest1_4.solution5([10, 3, 5, 2]))
 print("-----------")
 let mockTest2_1 = MockTest2_1()
 print(mockTest2_1.solution2("aaabbbccdaa"))
+
+print("-----------")
+let mockTest2_2 = MockTest2_2()
+print(mockTest2_2.solution2([1, 5, 8, 4]))
+
+print("-----------")
+let mockTest2_3 = MockTest2_3()
+print(mockTest2_3.solution2("havefunonleetcode", 5))
+
+print("-----------")
+let mockTest2_4 = MockTest2_4()
+print(mockTest2_4.solution2([10, 3, 5, 2]))
