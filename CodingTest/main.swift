@@ -176,4 +176,13 @@ print(compressionCharacter.solution("aaabbcccdaa"))
 print("-----------")
 
 let sumOfElements = SumOfElements()
-print(sumOfElements.solution2([1, 2, 3, 4]))
+print(sumOfElements.solution([1, 2, 3, 4]))
+
+print("-----------")
+
+let highestAppearance = HighestAppearances()
+print(highestAppearance.solution2("aabbbccccdd"))
+
+print("-----------")
+let differenceBetweenNumbers = DifferenceBetweenNumbers()
+print(differenceBetweenNumbers.solution2([3, 5, 2, 6, 6, 8]))
