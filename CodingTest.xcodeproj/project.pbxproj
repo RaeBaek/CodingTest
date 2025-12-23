@@ -64,6 +64,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		143BA4122EF4F01300B9B464 /* Care */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Care; sourceTree = "<group>"; };
 		1446F0542EFA481D007E075C /* MockTest1 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MockTest1; sourceTree = "<group>"; };
+		1446F0592EFAC6BB007E075C /* MockTest2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MockTest2; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 		14AB45A02D912FBF00AEF07C /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				1446F0592EFAC6BB007E075C /* MockTest2 */,
 				1446F0542EFA481D007E075C /* MockTest1 */,
 				143BA4122EF4F01300B9B464 /* Care */,
 				14AB45982D912FBF00AEF07C /* DoublePriorityQueue.swift */,
@@ -138,6 +140,7 @@
 			fileSystemSynchronizedGroups = (
 				143BA4122EF4F01300B9B464 /* Care */,
 				1446F0542EFA481D007E075C /* MockTest1 */,
+				1446F0592EFAC6BB007E075C /* MockTest2 */,
 			);
 			name = CodingTest;
 			productName = CodingTest;

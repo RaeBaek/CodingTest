@@ -190,3 +190,11 @@ print(differenceBetweenNumbers.solution2([3, 5, 2, 6, 6, 8]))
 print("-----------")
 let mockTest1_1 = MockTest1_1()
 print(mockTest1_1.solution2("aaabbcddd"))
+
+print("-----------")
+let mockTest1_4 = MockTest1_2()
+print(mockTest1_4.solution5([10, 3, 5, 2]))
+
+print("-----------")
+let mockTest2_1 = MockTest2_1()
+print(mockTest2_1.solution2("aaabbbccdaa"))

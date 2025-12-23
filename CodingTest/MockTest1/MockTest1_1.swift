@@ -32,7 +32,7 @@ final class MockTest1_1 {
     }
 
     func solution2(_ s: String) -> String {
-        if s.isEmpty { return ""}
+        if s.isEmpty { return "" }
 
         var result = ""
         var current = s.first!
