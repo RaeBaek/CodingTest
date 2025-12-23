@@ -186,3 +186,7 @@ print(highestAppearance.solution2("aabbbccccdd"))
 print("-----------")
 let differenceBetweenNumbers = DifferenceBetweenNumbers()
 print(differenceBetweenNumbers.solution2([3, 5, 2, 6, 6, 8]))
+
+print("-----------")
+let mockTest1_1 = MockTest1_1()
+print(mockTest1_1.solution2("aaabbcddd"))
