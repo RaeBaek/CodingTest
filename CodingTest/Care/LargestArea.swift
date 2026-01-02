@@ -129,4 +129,52 @@ final class LargestArea {
         }
         return maxArea
     }
+
+    func solution3(_ grid: [[Int]]) -> Int {
+        // 예외 처리
+        guard !grid.isEmpty else { return 0 }
+
+        let rows = grid.count
+        let cols = grid[0].count
+
+        // 방문 처리를 위한 grid
+        var grid = grid
+
+        let dx = [0, 0, 1, -1]
+        let dy = [1, -1, 0, 0]
+
+        var maxArea = 0
+
+        for i in 0..<rows {
+            for j in 0..<cols {
+                if grid[i][j] == 1 {
+                    var area = 0
+                    var queue = [(Int, Int)]()
+                    var index = 0
+
+                    while index < queue.count {
+                        let (x, y) = queue[index]
+                        index += 1
+                        area += 1
+
+                        for k in 0..<4 {
+                            let nx = x + dx[k]
+                            let ny = y + dy[k]
+
+                            if nx < 0 || nx >= rows || ny < 0 || ny >= cols {
+                                continue
+                            }
+
+                            if grid[nx][ny] == 1 {
+                                grid[nx][ny] = 0
+                                queue.append((nx, ny))
+                            }
+                        }
+                    }
+                    maxArea = max(maxArea, area)
+                }
+            }
+        }
+        return maxArea
+    }
 }

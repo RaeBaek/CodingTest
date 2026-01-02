@@ -150,63 +150,71 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
 //let makeEqualSumTwoQueue = MakeEqualSumTwoQueue()
 //print(makeEqualSumTwoQueue.solution([3, 2, 7, 2], [4, 6, 5, 1]))
 
-let consecutiveNumbers = ConsecutiveNumbers()
-print(consecutiveNumbers.solution("aacabddbbccannaa"))
+//let consecutiveNumbers = ConsecutiveNumbers()
+//print(consecutiveNumbers.solution("aacabddbbccannaa"))
+//
+//print("-----------")
+//
+//let largestArea = LargestArea()
+//print(largestArea.solution2([[1, 1, 0, 0], [0, 1, 0, 1], [0, 0, 1, 1], [1, 0, 0, 0]]))
+//
+//print("-----------")
+//
+//let appearLastIndex = AppearLastIndex()
+//print(appearLastIndex.solution2("swiftcoding"))
+//
+//print("-----------")
+//
+//let conditionalSimulation = ConditionalSimulation()
+//print(conditionalSimulation.solution2([4, 2, 3, 6]))
+//
+//print("-----------")
+//
+//let compressionCharacter = CompressionCharacter()
+//print(compressionCharacter.solution("aaabbcccdaa"))
+//
+//print("-----------")
+//
+//let sumOfElements = SumOfElements()
+//print(sumOfElements.solution([1, 2, 3, 4]))
+//
+
+//print("-----------")
+//let highestAppearance = HighestAppearances()
+//print(highestAppearance.solution2("aabbbccccdd"))
+
+//print("-----------")
+//let differenceBetweenNumbers = DifferenceBetweenNumbers()
+//print(differenceBetweenNumbers.solution2([3, 5, 2, 6, 6, 8]))
+
+//print("-----------")
+//let mockTest1_1 = MockTest1_1()
+//print(mockTest1_1.solution2("aaabbcddd"))
+//
+//print("-----------")
+//let mockTest1_4 = MockTest1_2()
+//print(mockTest1_4.solution5([10, 3, 5, 2]))
+//
+//print("-----------")
+//let mockTest2_1 = MockTest2_1()
+//print(mockTest2_1.solution2("aaabbbccdaa"))
+//
+//print("-----------")
+//let mockTest2_2 = MockTest2_2()
+//print(mockTest2_2.solution2([1, 5, 8, 4]))
+//
+//print("-----------")
+//let mockTest2_3 = MockTest2_3()
+//print(mockTest2_3.solution2("havefunonleetcode", 5))
+//
+//print("-----------")
+//let mockTest2_4 = MockTest2_4()
+//print(mockTest2_4.solution2([10, 3, 5, 2]))
 
 print("-----------")
-
-let largestArea = LargestArea()
-print(largestArea.solution2([[1, 1, 0, 0], [0, 1, 0, 1], [0, 0, 1, 1], [1, 0, 0, 0]]))
-
-print("-----------")
-
-let appearLastIndex = AppearLastIndex()
-print(appearLastIndex.solution2("swiftcoding"))
-
-print("-----------")
-
-let conditionalSimulation = ConditionalSimulation()
-print(conditionalSimulation.solution2([4, 2, 3, 6]))
-
-print("-----------")
-
-let compressionCharacter = CompressionCharacter()
-print(compressionCharacter.solution("aaabbcccdaa"))
-
-print("-----------")
-
-let sumOfElements = SumOfElements()
-print(sumOfElements.solution([1, 2, 3, 4]))
-
-print("-----------")
-
-let highestAppearance = HighestAppearances()
-print(highestAppearance.solution2("aabbbccccdd"))
-
-print("-----------")
-let differenceBetweenNumbers = DifferenceBetweenNumbers()
-print(differenceBetweenNumbers.solution2([3, 5, 2, 6, 6, 8]))
-
-print("-----------")
-let mockTest1_1 = MockTest1_1()
-print(mockTest1_1.solution2("aaabbcddd"))
-
-print("-----------")
-let mockTest1_4 = MockTest1_2()
-print(mockTest1_4.solution5([10, 3, 5, 2]))
-
-print("-----------")
-let mockTest2_1 = MockTest2_1()
-print(mockTest2_1.solution2("aaabbbccdaa"))
-
-print("-----------")
-let mockTest2_2 = MockTest2_2()
-print(mockTest2_2.solution2([1, 5, 8, 4]))
-
-print("-----------")
-let mockTest2_3 = MockTest2_3()
-print(mockTest2_3.solution2("havefunonleetcode", 5))
-
-print("-----------")
-let mockTest2_4 = MockTest2_4()
-print(mockTest2_4.solution2([10, 3, 5, 2]))
+let sumUpQuantity = SumUpQuantity2()
+print(sumUpQuantity.solution([
+    OrderItem(name: "Americano", option: "ICE", quantity: 2),
+    OrderItem(name: "Americano", option: "ICE", quantity: 1),
+    OrderItem(name: "Latte", option: "HOT", quantity: 1)
+]))
