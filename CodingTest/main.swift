@@ -252,46 +252,82 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
 //    input: "   "
 //))
 
-print("-----------")
-let leastRecentlyUsed = LeastRecentlyUsed2()
-print(leastRecentlyUsed.solution(
-    [
-        "apple",
-        "banana",
-        "cherry",
-        "grape",
-        "strawberry"
-    ],
-    input: "melon"
-))
-print(leastRecentlyUsed.solution2(
-    [
-        "Apple",
-        "BANANA",
-        "CHerry",
-        "GraPe",
-        "StraWBerry"
-    ],
-    input: "GraPe"
-))
-print(leastRecentlyUsed.solution3(
-    [
-        "Apple",
-        "BANANA",
-        "CHerry",
-        "GraPe",
-        "StraWBerry"
-    ],
-    input: "   "
-))
+//print("-----------")
+//let leastRecentlyUsed = LeastRecentlyUsed2()
+//print(leastRecentlyUsed.solution(
+//    [
+//        "apple",
+//        "banana",
+//        "cherry",
+//        "grape",
+//        "strawberry"
+//    ],
+//    input: "melon"
+//))
+//print(leastRecentlyUsed.solution2(
+//    [
+//        "Apple",
+//        "BANANA",
+//        "CHerry",
+//        "GraPe",
+//        "StraWBerry"
+//    ],
+//    input: "GraPe"
+//))
+//print(leastRecentlyUsed.solution3(
+//    [
+//        "Apple",
+//        "BANANA",
+//        "CHerry",
+//        "GraPe",
+//        "StraWBerry"
+//    ],
+//    input: "   "
+//))
+//
+//print(leastRecentlyUsed.solution3(
+//    [
+//        "Apple",
+//        "BANANA",
+//        "CHerry",
+//        "GraPe",
+//        "StraWBerry"
+//    ],
+//    input: "water             melon"
+//))
 
-print(leastRecentlyUsed.solution3(
-    [
-        "Apple",
-        "BANANA",
-        "CHerry",
-        "GraPe",
-        "StraWBerry"
-    ],
-    input: "water             melon"
-))
+print("-----------")
+let apiResponseProcessing = APIResponseProcessing()
+print(
+    apiResponseProcessing.solution2(
+        [
+            Content(id: "1", type: "movie",  title: "Avatar",     score: 8.9),
+            Content(id: "2", type: "tv",     title: "Breaking",   score: 9.5),
+            Content(id: "3", type: "person", title: "Nolan",      score: 9.8),
+            Content(id: "4", type: "movie",  title: "Batman",     score: 9.0),
+            Content(id: "5", type: "tv",     title: "Friends",    score: 8.7),
+            Content(id: "6", type: "person", title: "Spielberg",  score: 9.2),
+            Content(id: "7", type: "movie",  title: "Inception",  score: 9.3),
+            Content(id: "8", type: "tv",     title: "Dark",       score: 9.3),
+            Content(id: "9", type: "person", title: "Tarantino",  score: 9.6),
+            Content(id: "10", type: "movie", title: "Interstellar", score: 9.3),
+
+            // score 동점 + title 정렬 확인용
+            Content(id: "11", type: "movie", title: "Alien",      score: 9.3),
+            Content(id: "12", type: "tv",    title: "Arcane",     score: 9.3),
+            Content(id: "13", type: "person", title: "Fincher",  score: 9.6),
+
+            // 낮은 score 섞기
+            Content(id: "14", type: "movie", title: "Cars",       score: 7.2),
+            Content(id: "15", type: "tv",    title: "Lost",       score: 8.0),
+            Content(id: "16", type: "person", title: "Kubrick",  score: 9.4),
+
+            // 랜덤 섞임
+            Content(id: "17", type: "movie", title: "Joker",      score: 8.8),
+            Content(id: "18", type: "tv",    title: "Dexter",     score: 8.8),
+            Content(id: "19", type: "person", title: "Scorsese", score: 9.1),
+            Content(id: "20", type: "movie", title: "Tenet",      score: 7.9)
+        ],
+        top: 3
+    )
+)
