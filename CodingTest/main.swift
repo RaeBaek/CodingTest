@@ -12,23 +12,23 @@ func solution(_ x: Int, _ y: Int, _ n: Int) -> Int {
     if x == y {
         return 0
     }
-    
+
     // BFS 탐색을 위한 큐와 방문 여부를 기록할 배열
     var queue: [(Int, Int)] = [(x, 0)]  // (현재 값, 연산 횟수)
     var visited = Set<Int>()  // 방문한 숫자를 기록하여 중복 계산 방지
     visited.insert(x)
-    
+
     while !queue.isEmpty {
         let (current, count) = queue.removeFirst()
-        
+
         // 가능한 연산들: 더하기 n, 2 곱하기, 3 곱하기
         let nextValues = [current + n, current * 2, current * 3]
-        
+
         for next in nextValues {
             if next == y {
                 return count + 1  // 목표값에 도달하면 연산 횟수를 반환
             }
-            
+
             // y를 넘지 않으면서 방문하지 않은 숫자에 대해서만 큐에 추가
             if next <= y && !visited.contains(next) {
                 queue.append((next, count + 1))
@@ -36,7 +36,7 @@ func solution(_ x: Int, _ y: Int, _ n: Int) -> Int {
             }
         }
     }
-    
+
     return -1  // 목표값에 도달할 수 없는 경우 -1 반환
 }
 
@@ -44,21 +44,21 @@ func solutioon2(_ x: Int, _ y: Int, _ n: Int) -> Int {
     if x == y {
         return 0
     }
-    
+
     var queue: [(Int, Int)] = [(x, 0)]
     var visited = Set<Int>()
     visited.insert(x)
-    
+
     while !queue.isEmpty {
         let (current, count) = queue.removeFirst()
-        
+
         let nextValues = [current + n, current * 2, current * 3]
-        
+
         for next in nextValues {
             if next == y {
                 return count + 1
             }
-            
+
             if next <= y && !visited.contains(next) {
                 queue.append((next, count + 1))
                 visited.insert(next)
@@ -75,32 +75,32 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
     if x > y {
         return -1
     }
-    
+
     // x에서 y까지의 값을 저장할 DP 배열. 큰 값으로 초기화
     var dp = Array(repeating: Int.max, count: y + 1)
     dp[x] = 0  // 시작점인 x에서 x로 가는 데 필요한 연산 횟수는 0
-    
+
     for i in x...y {
         if dp[i] == Int.max {
             continue  // 이 값에 도달할 수 없다면 다음 값으로 넘어감
         }
-        
+
         // x + n으로 도달할 수 있으면 최소값 갱신
         if i + n <= y {
             dp[i + n] = min(dp[i + n], dp[i] + 1)
         }
-        
+
         // x * 2로 도달할 수 있으면 최소값 갱신
         if i * 2 <= y {
             dp[i * 2] = min(dp[i * 2], dp[i] + 1)
         }
-        
+
         // x * 3으로 도달할 수 있으면 최소값 갱신
         if i * 3 <= y {
             dp[i * 3] = min(dp[i * 3], dp[i] + 1)
         }
     }
-    
+
     // y에 도달할 수 없으면 -1 반환, 그렇지 않으면 dp[y] 반환
     return dp[y] == Int.max ? -1 : dp[y]
 }
@@ -211,10 +211,87 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
 //let mockTest2_4 = MockTest2_4()
 //print(mockTest2_4.solution2([10, 3, 5, 2]))
 
+//print("-----------")
+//let sumUpQuantity = SumUpQuantity2()
+//print(sumUpQuantity.solution([
+//    OrderItem(name: "Americano", option: "ICE", quantity: 2),
+//    OrderItem(name: "Americano", option: "ICE", quantity: 1),
+//    OrderItem(name: "Latte", option: "HOT", quantity: 1)
+//]))
+
+//print("-----------")
+//let leastRecentlyUsed = LeastRecentlyUsed()
+//print(leastRecentlyUsed.solution(
+//    [
+//        "apple",
+//        "banana",
+//        "cherry",
+//        "grape",
+//        "strawberry"
+//    ],
+//    input: "melon"
+//))
+//print(leastRecentlyUsed.solution2(
+//    [
+//        "Apple",
+//        "BANANA",
+//        "CHerry",
+//        "GraPe",
+//        "StraWBerry"
+//    ],
+//    input: "GraPe"
+//))
+//print(leastRecentlyUsed.solution3(
+//    [
+//        "Apple",
+//        "BANANA",
+//        "CHerry",
+//        "GraPe",
+//        "StraWBerry"
+//    ],
+//    input: "   "
+//))
+
 print("-----------")
-let sumUpQuantity = SumUpQuantity2()
-print(sumUpQuantity.solution([
-    OrderItem(name: "Americano", option: "ICE", quantity: 2),
-    OrderItem(name: "Americano", option: "ICE", quantity: 1),
-    OrderItem(name: "Latte", option: "HOT", quantity: 1)
-]))
+let leastRecentlyUsed = LeastRecentlyUsed2()
+print(leastRecentlyUsed.solution(
+    [
+        "apple",
+        "banana",
+        "cherry",
+        "grape",
+        "strawberry"
+    ],
+    input: "melon"
+))
+print(leastRecentlyUsed.solution2(
+    [
+        "Apple",
+        "BANANA",
+        "CHerry",
+        "GraPe",
+        "StraWBerry"
+    ],
+    input: "GraPe"
+))
+print(leastRecentlyUsed.solution3(
+    [
+        "Apple",
+        "BANANA",
+        "CHerry",
+        "GraPe",
+        "StraWBerry"
+    ],
+    input: "   "
+))
+
+print(leastRecentlyUsed.solution3(
+    [
+        "Apple",
+        "BANANA",
+        "CHerry",
+        "GraPe",
+        "StraWBerry"
+    ],
+    input: "water             melon"
+))
