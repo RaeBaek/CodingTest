@@ -346,22 +346,26 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
 //    ]
 //))
 
+//print("-----------")
+//let combineTwoAPI = CombineTwoAPI()
+//let semaphore = DispatchSemaphore(value: 0)
+//
+//Task {
+//    defer { semaphore.signal() }
+//
+//    do {
+//        let result = try await combineTwoAPI.solution(UUID())
+//        print(result.user.name)
+//        print(result.orders.map { $0.title })
+//    } catch {
+//        print("유저 조회 실패: \(error)")
+//    }
+//}
+//
+//// main.swift(커맨드라인)에서는 비동기 Task가 끝나기 전에 프로세스가 종료될 수 있어,
+//// 세마포어로 Task 종료까지 대기합니다.
+//semaphore.wait()
+
 print("-----------")
-let combineTwoAPI = CombineTwoAPI()
-let semaphore = DispatchSemaphore(value: 0)
-
-Task {
-    defer { semaphore.signal() }
-
-    do {
-        let result = try await combineTwoAPI.solution(UUID())
-        print(result.user.name)
-        print(result.orders.map { $0.title })
-    } catch {
-        print("유저 조회 실패: \(error)")
-    }
-}
-
-// main.swift(커맨드라인)에서는 비동기 Task가 끝나기 전에 프로세스가 종료될 수 있어,
-// 세마포어로 Task 종료까지 대기합니다.
-semaphore.wait()
+let mergingNotificationSettings = MergingNotificationSettings()
+print(mergingNotificationSettings.example())
