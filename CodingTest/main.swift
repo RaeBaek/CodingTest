@@ -369,3 +369,31 @@ func solution3(_ x: Int, _ y: Int, _ n: Int) -> Int {
 print("-----------")
 let mergingNotificationSettings = MergingNotificationSettings()
 print(mergingNotificationSettings.example())
+
+print("-----------")
+let checker = CheckSeatReservationConflict()
+let reservations: [Reservation] = [
+    // 좌석 1 — 단순 겹침
+    Reservation(seat: 1, start: 10, end: 20),
+    Reservation(seat: 1, start: 15, end: 25), // 겹침
+    Reservation(seat: 1, start: 30, end: 40), // 겹치지 않음
+
+    // 좌석 2 — 연쇄 겹침
+    Reservation(seat: 2, start: 5,  end: 10),
+    Reservation(seat: 2, start: 8,  end: 12), // 겹침
+    Reservation(seat: 2, start: 11, end: 15), // 연쇄 겹침
+
+    // 좌석 3 — 딱 붙는 케이스 (겹치지 않음)
+    Reservation(seat: 3, start: 10, end: 20),
+    Reservation(seat: 3, start: 20, end: 30), // 겹침 아님 (20 < 20 ❌)
+
+    // 좌석 4 — 여러 개 중 일부만 겹침
+    Reservation(seat: 4, start: 1,  end: 3),
+    Reservation(seat: 4, start: 2,  end: 4),  // 겹침
+    Reservation(seat: 4, start: 5,  end: 7)
+]
+let result = checker.solution(reservations)
+
+result.forEach {
+    print("seat: \($0.seat), start: \($0.start), end: \($0.end)")
+}
