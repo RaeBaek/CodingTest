@@ -409,5 +409,20 @@ print("-----------")
 //let firstQuestion = FirstQuestion()
 //print(firstQuestion.mostFrequentEvent(["login","purchase","login","logout","purchase","purchase"]))
 //print(firstQuestion.mostFrequentEvent2(["login","login","logout","logout","purchase"]))
-let secondQuestion = SecondQuestion()
-print(secondQuestion.normalizeAndUnique2(["  Hello  World ", "hello world", "HELLO   world", "swift"]))
+
+//print("-----------")
+//let secondQuestion = SecondQuestion()
+//print(secondQuestion.normalizeAndUnique2(["  Hello  World ", "hello world", "HELLO   world", "swift"]))
+
+print("-----------")
+let thirdQuestion = ThirdQuestion()
+print(thirdQuestion.conflictedRooms([
+    Booking(room: 1, start: 10, end: 20),
+    Booking(room: 1, start: 20, end: 30),
+    Booking(room: 4, start: 10, end: 20),
+    Booking(room: 4, start: 15, end: 18),
+    Booking(room: 3, start: 10, end: 20),
+    Booking(room: 3, start: 15, end: 18),
+    Booking(room: 2, start: 10, end: 20),
+    Booking(room: 2, start: 15, end: 18),
+]))
