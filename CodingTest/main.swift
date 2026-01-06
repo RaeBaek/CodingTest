@@ -404,3 +404,8 @@ let cheatSheet = CheatSheet()
 //cheatSheet.hashMapIntCount()
 //cheatSheet.hashMapCharCount()
 cheatSheet.queueExample()
+
+print("-----------")
+let firstQuestion = FirstQuestion()
+print(firstQuestion.mostFrequentEvent(["login","purchase","login","logout","purchase","purchase"]))
+print(firstQuestion.mostFrequentEvent(["login","login","logout","logout","purchase"]))
