@@ -426,3 +426,37 @@ print(thirdQuestion.conflictedRooms([
     Booking(room: 2, start: 10, end: 20),
     Booking(room: 2, start: 15, end: 18),
 ]))
+
+print("-----------")
+let fourthQuestion = FourthQuestion()
+print(fourthQuestion.shortestPath([
+    [0,0,1],
+    [0,0,0],
+    [1,0,0]
+]))
+print(fourthQuestion.shortestPath([
+    [0, 0, 1, 0],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0],
+    [0, 1, 1, 0]
+]))
+print(fourthQuestion.shortestPath([
+    [0, 0, 1, 0],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0],
+    [0, 1, 0, 0],
+    [1, 1, 1, 0]
+]))
+print(fourthQuestion.shortestPath([
+    [0, 0, 1, 0],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0],
+    [0, 1, 0, 0],
+    [1, 1, 1, 0],
+    [1, 1, 1, 0]
+]))
+print(fourthQuestion.shortestPath([
+    [0, 0, 1, 0],
+    [1, 0],
+    [0, 0, 0, 0]
+]))
