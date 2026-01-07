@@ -414,68 +414,80 @@ print("-----------")
 //let secondQuestion = SecondQuestion()
 //print(secondQuestion.normalizeAndUnique2(["  Hello  World ", "hello world", "HELLO   world", "swift"]))
 
-print("-----------")
-let thirdQuestion = ThirdQuestion()
-print(thirdQuestion.conflictedRooms([
-    Booking(room: 1, start: 10, end: 20),
-    Booking(room: 1, start: 20, end: 30),
-    Booking(room: 4, start: 10, end: 20),
-    Booking(room: 4, start: 15, end: 18),
-    Booking(room: 3, start: 10, end: 20),
-    Booking(room: 3, start: 15, end: 18),
-    Booking(room: 2, start: 10, end: 20),
-    Booking(room: 2, start: 15, end: 18),
-]))
+//print("-----------")
+//let thirdQuestion = ThirdQuestion()
+//print(thirdQuestion.conflictedRooms([
+//    Booking(room: 1, start: 10, end: 20),
+//    Booking(room: 1, start: 20, end: 30),
+//    Booking(room: 4, start: 10, end: 20),
+//    Booking(room: 4, start: 15, end: 18),
+//    Booking(room: 3, start: 10, end: 20),
+//    Booking(room: 3, start: 15, end: 18),
+//    Booking(room: 2, start: 10, end: 20),
+//    Booking(room: 2, start: 15, end: 18),
+//]))
+//
+//print("-----------")
+//let fourthQuestion = FourthQuestion()
+//print(fourthQuestion.shortestPath([
+//    [0,0,1],
+//    [0,0,0],
+//    [1,0,0]
+//]))
+//print(fourthQuestion.shortestPath([
+//    [0, 0, 1, 0],
+//    [1, 0, 1, 0],
+//    [0, 0, 0, 0],
+//    [0, 1, 1, 0]
+//]))
+//print(fourthQuestion.shortestPath([
+//    [0, 0, 1, 0],
+//    [1, 0, 1, 0],
+//    [0, 0, 0, 0],
+//    [0, 1, 0, 0],
+//    [1, 1, 1, 0]
+//]))
+//print(fourthQuestion.shortestPath([
+//    [0, 0, 1, 0],
+//    [1, 0, 1, 0],
+//    [0, 0, 0, 0],
+//    [0, 1, 0, 0],
+//    [1, 1, 1, 0],
+//    [1, 1, 1, 0]
+//]))
+//print(fourthQuestion.shortestPath([
+//    [0, 0, 1, 0],
+//    [1, 0],
+//    [0, 0, 0, 0]
+//]))
+//
+//print("-----------")
+//let firstQuestion2 = FirstQuestion2()
+//print(firstQuestion2.solution([
+//    Log(userId: 1, action: "login", timestamp: 1),
+//    Log(userId: 1, action: "purchase", timestamp: 2),
+//    Log(userId: 1, action: "login", timestamp: 3),
+//    Log(userId: 2, action: "login", timestamp: 4),
+//    Log(userId: 2, action: "logout", timestamp: 5),
+//    Log(userId: 2, action: "logout", timestamp: 6),
+//]))
+//
+//print("-----------")
+//let seoncdQuestion2 = SecondQuestion2()
+//print(seoncdQuestion2.solution2([
+//    (20, 120),
+//    (150, 180),
+//    (200, 240)
+//], duration: 30))
 
 print("-----------")
-let fourthQuestion = FourthQuestion()
-print(fourthQuestion.shortestPath([
-    [0,0,1],
-    [0,0,0],
-    [1,0,0]
-]))
-print(fourthQuestion.shortestPath([
-    [0, 0, 1, 0],
-    [1, 0, 1, 0],
-    [0, 0, 0, 0],
-    [0, 1, 1, 0]
-]))
-print(fourthQuestion.shortestPath([
-    [0, 0, 1, 0],
-    [1, 0, 1, 0],
-    [0, 0, 0, 0],
-    [0, 1, 0, 0],
-    [1, 1, 1, 0]
-]))
-print(fourthQuestion.shortestPath([
-    [0, 0, 1, 0],
-    [1, 0, 1, 0],
-    [0, 0, 0, 0],
-    [0, 1, 0, 0],
-    [1, 1, 1, 0],
-    [1, 1, 1, 0]
-]))
-print(fourthQuestion.shortestPath([
-    [0, 0, 1, 0],
-    [1, 0],
-    [0, 0, 0, 0]
-]))
+let thirdQuestion2 = ThirdQuestion2()
+print(thirdQuestion2.solution([
+    Product(productId: 1, score: 90),
+    Product(productId: 2, score: 95),
+    Product(productId: 3, score: 95),
+    Product(productId: 4, score: 80),
+    Product(productId: 5, score: 85),
+    Product(productId: 6, score: 80),
+], k: 4))
 
-print("-----------")
-let firstQuestion2 = FirstQuestion2()
-print(firstQuestion2.solution([
-    Log(userId: 1, action: "login", timestamp: 1),
-    Log(userId: 1, action: "purchase", timestamp: 2),
-    Log(userId: 1, action: "login", timestamp: 3),
-    Log(userId: 2, action: "login", timestamp: 4),
-    Log(userId: 2, action: "logout", timestamp: 5),
-    Log(userId: 2, action: "logout", timestamp: 6),
-]))
-
-print("-----------")
-let seoncdQuestion2 = SecondQuestion2()
-print(seoncdQuestion2.solution2([
-    (20, 120),
-    (150, 180),
-    (200, 240)
-  ], duration: 30))
