@@ -24,7 +24,9 @@ final class FourthQuestion {
         guard grid.allSatisfy({ $0.count == cols }) else { return -1 }
 
         // 시작/도착이 벽이면 즉시 종료
-        guard grid[0][0] != 1 && grid[rows - 1][cols - 1] != 1 else { return -1 }
+        if grid[0][0] == 1 || grid[rows - 1][cols - 1] == 1 {
+            return -1
+        }
 
         var visited = Array(repeating: Array(repeating: false, count: cols), count: rows)
         var dists = Array(repeating: Array(repeating: 0, count: cols), count: rows)
@@ -34,7 +36,6 @@ final class FourthQuestion {
         var queue: [(Int, Int)] = [(0, 0)]
         var index = 0
         visited[0][0] = true
-        dists[0][0] = 0
 
         while index < queue.count {
             let (x, y) = queue[index]

@@ -460,3 +460,14 @@ print(fourthQuestion.shortestPath([
     [1, 0],
     [0, 0, 0, 0]
 ]))
+
+print("-----------")
+let firstQuestion2 = FirstQuestion2()
+print(firstQuestion2.solution([
+    Log(userId: 1, action: "login", timestamp: 1),
+    Log(userId: 1, action: "purchase", timestamp: 2),
+    Log(userId: 1, action: "login", timestamp: 3),
+    Log(userId: 2, action: "login", timestamp: 4),
+    Log(userId: 2, action: "logout", timestamp: 5),
+    Log(userId: 2, action: "logout", timestamp: 6),
+]))
