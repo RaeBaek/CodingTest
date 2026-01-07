@@ -471,3 +471,11 @@ print(firstQuestion2.solution([
     Log(userId: 2, action: "logout", timestamp: 5),
     Log(userId: 2, action: "logout", timestamp: 6),
 ]))
+
+print("-----------")
+let seoncdQuestion2 = SecondQuestion2()
+print(seoncdQuestion2.solution2([
+    (20, 120),
+    (150, 180),
+    (200, 240)
+  ], duration: 30))
