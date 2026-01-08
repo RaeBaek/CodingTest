@@ -491,3 +491,6 @@ print(thirdQuestion2.solution([
     Product(productId: 6, score: 80),
 ], k: 4))
 
+print("-----------")
+let fourthQuestion2 = FourthQuestion2()
+print(fourthQuestion2.solution(3, 2, 5))
