@@ -480,17 +480,21 @@ print("-----------")
 //    (200, 240)
 //], duration: 30))
 
-print("-----------")
-let thirdQuestion2 = ThirdQuestion2()
-print(thirdQuestion2.solution([
-    Product(productId: 1, score: 90),
-    Product(productId: 2, score: 95),
-    Product(productId: 3, score: 95),
-    Product(productId: 4, score: 80),
-    Product(productId: 5, score: 85),
-    Product(productId: 6, score: 80),
-], k: 4))
+//print("-----------")
+//let thirdQuestion2 = ThirdQuestion2()
+//print(thirdQuestion2.solution([
+//    Product(productId: 1, score: 90),
+//    Product(productId: 2, score: 95),
+//    Product(productId: 3, score: 95),
+//    Product(productId: 4, score: 80),
+//    Product(productId: 5, score: 85),
+//    Product(productId: 6, score: 80),
+//], k: 4))
+//
+//print("-----------")
+//let fourthQuestion2 = FourthQuestion2()
+//print(fourthQuestion2.solution(3, 2, 5))
 
 print("-----------")
-let fourthQuestion2 = FourthQuestion2()
-print(fourthQuestion2.solution(3, 2, 5))
+let splitStrings = SplitStrings()
+print(splitStrings.solution3("aaabbaccccabba"))

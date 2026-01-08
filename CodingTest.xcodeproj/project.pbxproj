@@ -69,6 +69,7 @@
 		14E4C6FB2F0CB209009412AA /* AlgorithmPattern */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AlgorithmPattern; sourceTree = "<group>"; };
 		14E4C6FE2F0CE01F009412AA /* MockInterview1 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MockInterview1; sourceTree = "<group>"; };
 		14E4C7072F0E0052009412AA /* MockInterview2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MockInterview2; sourceTree = "<group>"; };
+		14E4C7162F0F5A34009412AA /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		14AB45A02D912FBF00AEF07C /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				14E4C7162F0F5A34009412AA /* Array */,
 				14E4C7072F0E0052009412AA /* MockInterview2 */,
 				14E4C6FE2F0CE01F009412AA /* MockInterview1 */,
 				14E4C6FB2F0CB209009412AA /* AlgorithmPattern */,
@@ -153,6 +155,7 @@
 				14E4C6FB2F0CB209009412AA /* AlgorithmPattern */,
 				14E4C6FE2F0CE01F009412AA /* MockInterview1 */,
 				14E4C7072F0E0052009412AA /* MockInterview2 */,
+				14E4C7162F0F5A34009412AA /* Array */,
 			);
 			name = CodingTest;
 			productName = CodingTest;
