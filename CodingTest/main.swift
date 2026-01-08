@@ -495,6 +495,10 @@ print("-----------")
 //let fourthQuestion2 = FourthQuestion2()
 //print(fourthQuestion2.solution(3, 2, 5))
 
+//print("-----------")
+//let splitStrings = SplitStrings()
+//print(splitStrings.solution3("aaabbaccccabba"))
+
 print("-----------")
-let splitStrings = SplitStrings()
-print(splitStrings.solution3("aaabbaccccabba"))
+let bestAlbum2 = BestAlbum2()
+print(bestAlbum2.solution(["classic", "pop", "classic", "classic", "pop"], [500, 600, 150, 800, 2500]))
